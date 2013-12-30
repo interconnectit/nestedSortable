@@ -585,7 +585,8 @@
 
 		_isAllowed: function(parentItem, level, levels) {
 			var o = this.options,
-				maxLevels = this.placeholder.closest('.ui-sortable').nestedSortable('option', 'maxLevels'); // this takes into account the maxLevels set to the recipient list
+				maxLevels = o.maxLevels;
+				//maxLevels = this.placeholder.closest('.ui-sortable').nestedSortable('option', 'maxLevels'); // this takes into account the maxLevels set to the recipient list
 
 			// mjs - is the root protected?
 			// mjs - are we nesting too deep?
